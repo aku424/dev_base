@@ -1,0 +1,72 @@
+html {
+    font-size: 1px;
+}
+body {
+    font-size: $fz-01;
+    font-family: $ff-base;
+}
+.inner {
+    max-width: $w-content;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+//wave
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+
+    [class^="wave"] {
+        &:nth-child(1) {
+            animation: move-forever 15s cubic-bezier(.55,.5,.45,.5) infinite;
+        }
+
+        &:nth-child(2) {
+            animation: move-forever 11s cubic-bezier(.55,.5,.45,.5) infinite;
+        }
+        
+        &:nth-child(3) {
+            animation: move-forever 8s cubic-bezier(.55,.5,.45,.5) infinite;
+        }
+        
+        &:nth-child(4) {
+            animation: move-forever 5s cubic-bezier(.55,.5,.45,.5) infinite;
+        }
+    }
+}
+
+.wave-01 {
+    fill:  $wave-01;
+}
+
+.wave-02 {
+    fill:  $wave-02;
+}
+
+.wave-03 {
+    fill:  $wave-03;
+}
+
+.wave-04 {
+    fill:  $wave-03;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
+}
+@include mq(sm){
+    .waves {
+        height:40px;
+        min-height:40px;
+    }
+}
+
