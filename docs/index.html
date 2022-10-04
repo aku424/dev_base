@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/main.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/css/main.css">
+<title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="header__inner">
             <h1 class="header__logo">
-                <a href="/"><img src="" alt="RAKUSUI"></a>
+                <a href="/"><img src="./img/logo-01.png" alt="RAKUSUI"></a>
             </h1>
             <nav class="header__nav">
                 <ul class="header__list">
@@ -33,8 +36,8 @@
                         <p class="mv__text">落水検知ユニットは、海中への転落を自動で検出し、あなたの代わりに即時通報してくれるサービスです。</p>
                         <p class="mv__text">あなたの大切な人に位置情報がリアルタイムに共有されます。</p>
                     </div>
-                    <div class="m-btn m-btn--white">
-                        <a class="m-btn__link" href="/dummy/"></a>
+                    <div class="m-btn m-btn--white m-btn--left">
+                        <a class="m-btn__link" href="/dummy/">購入する</a>
                     </div>
                 </div>
                 <div class="mv__media">
@@ -46,6 +49,21 @@
             <!-- 動く波 -->
             <!-- 動く波 -->
             <!-- 動く波 -->
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use class="wave-01" xlink:href="#wave" x="48" y="0"/>
+                <use class="wave-02" xlink:href="#wave" x="48" y="3"/>
+                <use class="wave-03" xlink:href="#wave" x="48" y="5"/>
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
         </div>
 
         <div class="lead">
@@ -58,11 +76,6 @@
             <div class="inner">
                 <div class="m-media-lyt">
                     <div class="m-media-lyt__wrap">
-                        <div class="m-media-lyt__item">
-                            <div class="m-media">
-                                <img src="./img/img-03.png" alt="">
-                            </div>
-                        </div>
                         <div class="m-media-lyt__item">
                             <div class="m-h2-title-01">
                                 <span class="m-title-01__sub">叫ぶよりもたしかな海での「助けて！」</span>
@@ -87,20 +100,20 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="m-media-lyt__item">
+                            <div class="m-media">
+                                <img src="./img/img-03.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="alert">
             <div class="inner">
                 <div class="m-media-lyt">
                     <div class="m-media-lyt__wrap">
-                        <div class="m-media-lyt__item">
-                            <div class="m-media">
-                                <img src="./img/img-05.png" alt="">
-                            </div>
-                        </div>
                         <div class="m-media-lyt__item">
                             <div class="m-h2-title-01">
                                 <span class="m-title-01__sub">海での居場所をリアルタイムに</span>
@@ -111,6 +124,11 @@
                                 <p class="m-txt-item">簡易チャットが可能。</p>
                                 <p class="m-txt-item">過去の行動を振り返ることも可能。</p>
                                 <p class="m-txt-item">おうちにいても、大切な人の安否がわかる。</p>
+                            </div>
+                        </div>
+                        <div class="m-media-lyt__item">
+                            <div class="m-media">
+                                <img src="./img/img-05.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -127,11 +145,56 @@
                     </div>
                 </div>
             </div>
-            <!-- 動く波 -->
-            <!-- 動く波 -->
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use class="wave-01" xlink:href="#wave" x="48" y="0"/>
+                <use class="wave-04" xlink:href="#wave" x="48" y="3"/>
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
         </div>
 
         <div class="collabo">
+            <div class="inner">
+                <div class="m-media-lyt">
+                    <div class="m-media-lyt__wrap">
+                        <div class="m-media-lyt__item">
+                            <div class="m-h2-title-02">
+                                <h2 class="m-title-02__main">落水検知ユニット</h2>
+                            </div>
+                            <div class="m-txt">
+                                <p class="m-txt-item"><b>肌身離さず身に着けるものだから、ストレスに感じない小型、軽量設計。</b></p>
+                                <p class="m-txt-item"><b>ユニットは、金属部分(電極)が水に浸かった際に設定した時間経過すると落水と判断します。</b></p>
+                            </div>
+                            <ul class="desc__info">
+                                <li class="desc__info-item">本体サイズ60mm×43mm×21mm</li>
+                                <li class="desc__info-item">本体重量約40g（キーリング等の取付器具を含まず）</li>
+                            </ul>
+                            <div class="desc__price">
+                                <p><b>3,960円</b>（税込）</p>
+                            </div>
+                            <div class="m-btn m-btn--white desc__btn">
+                                <a class="m-btn__link" href="/dummy/">購入する</a>
+                            </div>
+                        </div>
+                        <div class="m-media-lyt__item">
+                            <div class="m-media">
+                                <img src="./img/img-08.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desc">
             <div class="inner">
                 <div class="m-media-lyt">
                     <div class="m-media-lyt__wrap">
@@ -165,41 +228,108 @@
                     </div>
                 </div>
             </div>
+
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use class="wave-02" xlink:href="#wave" x="48" y="0"/>
+                <use class="wave-03" xlink:href="#wave" x="48" y="3"/>
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
         </div>
 
-        <div class="desc">
+        <div class="rental">
             <div class="inner">
-                <div class="m-media-lyt">
-                    <div class="m-media-lyt__wrap">
-                        <div class="m-media-lyt__item">
-                            <div class="m-h2-title-02">
-                                <h2 class="m-title-02__main">落水検知ユニット</h2>
-                            </div>
-                            <div class="m-txt">
-                                <p class="m-txt-item"><b>肌身離さず身に着けるものだから、ストレスに感じない小型、軽量設計。</b></p>
-                                <p class="m-txt-item"><b>ユニットは、金属部分(電極)が水に浸かった際に設定した時間経過すると落水と判断します。</b></p>
-                            </div>
-                            <ul class="desc__info">
-                                <li class="desc__info-item">本体サイズ60mm×43mm×21mm</li>
-                                <li class="desc__info-item">本体重量約40g（キーリング等の取付器具を含まず）</li>
-                            </ul>
-                            <div class="desc__price">
-                                <p><b>3,960円</b>（税込）</p>
-                            </div>
-                            <div class="m-btn m-btn--white desc__btn">
-                                <a class="m-btn__link" href="/dummy/">購入する</a>
-                            </div>
-                        </div>
-                        <div class="m-media-lyt__item">
+                <div class="m-h2-title-03">
+                    <h2 class="m-title-03__main">落水検知ユニットのレンタルについて</h2>
+                </div>
+                <div class="m-txt m-txt--tac">
+                    <p class="m-txt__item">海上のお客様の安全を守りながら収益源増やしませんか？ お客さまにより安全に海での釣りなどを楽しんで頂くことが可能となり、安定した収益源につながります。設置費用・維持コストは一切かかりません。 ぜひ下記サイトよりお気軽にご相談ください。</p>
+                </div>
+                <div class="m-lyt">
+                    <div class="m-lyt__content">
+                        <div class="m-lyt__inner">
                             <div class="m-media">
-                                <img src="./img/img-08.png" alt="">
+                                <img src="./img/dummy-02.png" alt="">
                             </div>
+                            <p class="m-media__caption">必要な時だけお店でレンタル</p>
                         </div>
                     </div>
+
+                    <div class="m-lyt__content">
+                        <div class="m-lyt__inner">
+                            <div class="m-media">
+                                <img src="./img/dummy-02.png" alt="">
+                            </div>
+                            <p class="m-media__caption">専用アプリで簡単にレンタル開始から決済まで</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-btn">
+                    <a class="m-btn__link" href="/dummy/">レンタルについて詳しく見る</a>
                 </div>
             </div>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="inner">
+            <div class="footer-nav__wrap">
+                <div class="footer__logo">
+                    <img src="./img/logo-02.png" alt="RAKUSUI">
+                </div>
+                <div class="footer__links">
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="/dummy/">会社紹介</a>
+                                <a href="/dummy/">レンタル導入</a>
+                                <a href="/dummy/">お問い合わせ</a>
+                                <a href="/dummy/">法人のお客様</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="footer__sns">
+                        <li class="footer__icon">
+                            <a href="/dummy/"><img src="./img/icon-02.png" alt=""></a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="/dummy/"><img src="./img/icon-03.png" alt=""></a>
+                        </li>
+                        <li class="footer__icon">
+                            <a href="/dummy/"><img src="./img/icon-04.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__info">
+                <ul class="footer__policy">
+                    <li class="footer__policy-item">
+                        <a href="">プライバシーポリシー</a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="">利用規約</a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="">特定商取引に基づく表記</a>
+                    </li>
+                    <li class="footer__policy-item">
+                        <a href="">Cookieポリシー</a>
+                    </li>
+                </ul>
+                <div class="footer__copy">
+                    <p class="footer__copy-text"><small>Nisshinbo Holdings Inc. All Right Reserved.</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./src/js//index.js"></script>
 </body>
 </html>
