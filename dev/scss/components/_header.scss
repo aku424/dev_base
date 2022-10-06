@@ -1,4 +1,5 @@
 .header {
+    // position: fixed;
     &__inner {
         align-items: center;
         box-sizing: content-box;
@@ -12,6 +13,14 @@
     &__logo {
         font-weight: bold;
         font-size: 32px;
+
+        a {
+            transition: opacity .2s;
+
+            &:hover{
+                opacity: .7;
+            }
+        }
     }
 
     &__nav {
@@ -19,7 +28,7 @@
 
     &__list {
         display: flex;
-        gap: 10px;
+        gap: 22px;
         align-items: center;
         list-style: none;
         padding: 0;
@@ -27,7 +36,7 @@
 
     &__item {
         a {
-            color: #000;
+            color: $c-03;
             text-decoration: none;
             transition: opacity .2s;
 

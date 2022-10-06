@@ -29,12 +29,13 @@ $breakpoints: (
 // color
 $c-01: #213153;
 $c-02: #00377E;
+$c-03: #fff;
 
 // wave color
 $wave-01 : #8094BA;
 $wave-02 : #CED6EA;
 $wave-03 : #EDF1F6;
-$wave-03 : #fff;
+$wave-04 : #fff;
 
 // bg color
 $bg-01: #EDF1F6;
@@ -46,6 +47,7 @@ $fz-03: 18rem; //28
 $fz-04: 48rem; //72
 $fz-05: 26rem; //40
 $fz-06: 12rem; //16
+$fz-07: 58rem; //86
 
 //width
 $w-content: 1080px;
@@ -54,4 +56,4 @@ $w-header: 1260px;
 
 
 //font-family
-$ff-base:  'Noto Sans JP', sans-serif "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic";
+$ff-base: 'Noto Sans JP', sans-serif;
